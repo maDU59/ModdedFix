@@ -12,7 +12,10 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
 
     // modImplementation("maven.modrinth:lootr:efKMR8nl")
-    modImplementation("maven.modrinth:cloth-config:21.11.153+fabric")
+    modRuntimeOnly("maven.modrinth:cloth-config:21.11.153+fabric")
+
+    modImplementation("maven.modrinth:sodium:mc1.21.11-0.8.14-fabric")
+    modImplementation("maven.modrinth:iris:1.10.8+1.21.11-fabric")
 }
 
 loom {

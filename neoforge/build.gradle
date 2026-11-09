@@ -63,3 +63,8 @@ sourceSets.configureEach {
         }
     }
 }
+
+dependencies {
+    implementation("maven.modrinth:sodium:mc1.21.11-0.8.14-neoforge")
+    implementation("maven.modrinth:iris:1.10.8+1.21.11-neoforge")
+}
