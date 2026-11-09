@@ -7,7 +7,7 @@ dependencies {
     implementation("net.fabricmc:fabric-loader:${fabric_loader_version}")
     implementation("net.fabricmc.fabric-api:fabric-api:${fabric_version}")
 
-    // implementation("maven.modrinth:lootr:gVwn7m2v")
+    // implementation("maven.modrinth:lootr:HegkPUoM")
 }
 
 loom {
