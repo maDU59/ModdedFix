@@ -26,6 +26,7 @@ public class ModdedFixDataFixer {
             registerBlockEntityAndBlockConversion("lootr:lootr_trapped_chest", "minecraft:trapped_chest");
             registerBlockEntityAndBlockConversion("lootr:lootr_barrel", "minecraft:barrel");
             registerBlockEntityAndBlockConversion("lootr:lootr_shulker_box", "minecraft:shulker_box");
+            registerBlockEntityAndBlockConversion("lootr:lootr_shulker", "minecraft:shulker_box");
             registerBlockEntityAndBlockConversion("lootr:lootr_decorated_pot", "minecraft:lootr_decorated_pot");
             registerBlockEntityAndBlockConversion("lootr:lootr_suspicious_sand", "minecraft:lootr_suspicious_sand");
             registerBlockEntityAndBlockConversion("lootr:lootr_suspicious_gravel", "minecraft:lootr_suspicious_gravel");
@@ -38,6 +39,7 @@ public class ModdedFixDataFixer {
             registerBlockEntityAndBlockConversion("lootr:trapped_chest", "minecraft:trapped_chest");
             registerBlockEntityAndBlockConversion("lootr:barrel", "minecraft:barrel");
             registerBlockEntityAndBlockConversion("lootr:shulker_box", "minecraft:shulker_box");
+            registerBlockEntityAndBlockConversion("lootr:shulker", "minecraft:shulker_box");
             registerBlockEntityAndBlockConversion("lootr:decorated_pot", "minecraft:lootr_decorated_pot");
             registerBlockEntityAndBlockConversion("lootr:suspicious_sand", "minecraft:lootr_suspicious_sand");
             registerBlockEntityAndBlockConversion("lootr:suspicious_gravel", "minecraft:lootr_suspicious_gravel");
@@ -97,6 +99,7 @@ public class ModdedFixDataFixer {
         Identifier id = Identifier.tryParse(name);
         if (id == null || BuiltInRegistries.BLOCK.containsKey(id)) return null;
         String newName = ModdedFixDataFixer.BLOCKS.get(name);
+        if(newName == null) return null;
         Identifier newId = Identifier.tryParse(newName);
         if(newId == null || !BuiltInRegistries.BLOCK.containsKey(newId)) return null;
         return newName;
@@ -118,6 +121,7 @@ public class ModdedFixDataFixer {
         Identifier id = Identifier.tryParse(name);
         if (id == null || BuiltInRegistries.BLOCK_ENTITY_TYPE.containsKey(id)) return null;
         String newName = ModdedFixDataFixer.BLOCK_ENTITIES.get(name);
+        if(newName == null) return null;
         Identifier newId = Identifier.tryParse(newName);
         if(newId == null || !BuiltInRegistries.BLOCK_ENTITY_TYPE.containsKey(newId)) return null;
         return newName;
@@ -139,6 +143,7 @@ public class ModdedFixDataFixer {
         Identifier id = Identifier.tryParse(name);
         if (id == null || BuiltInRegistries.ITEM.containsKey(id)) return null;
         String newName = ModdedFixDataFixer.ITEMS.get(name);
+        if(newName == null) return null;
         Identifier newId = Identifier.tryParse(newName);
         if(newId == null || !BuiltInRegistries.ITEM.containsKey(newId)) return null;
         return newName;
