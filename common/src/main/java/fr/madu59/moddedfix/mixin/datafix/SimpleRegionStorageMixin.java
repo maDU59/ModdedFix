@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(SimpleRegionStorage.class)
 public class SimpleRegionStorageMixin {
     @Inject(method = "upgradeChunkTag", at = @At("HEAD"))
-    public void moddedfix$upgradeChunkTag(CompoundTag chunkData, int defaultVersion, CompoundTag dataFixContextTag, int targetVersion, CallbackInfoReturnable<CompoundTag> cir) {
+    public void moddedfix$upgradeChunkTag(CompoundTag chunkData, int version, CompoundTag p_459066_, CallbackInfoReturnable<CompoundTag> cir) {
         ModdedFixDataFixer.remapChunkBlocks(chunkData);
         ModdedFixDataFixer.remapChunkBlockEntities(chunkData);
     }

@@ -2,7 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "package": "fr.madu59.moddedfix.mixin",
-  "compatibilityLevel": "JAVA_25",
+  "compatibilityLevel": "JAVA_21",
   "mixins": [
     "datafix.DataFixerUpperMixin",
     "datafix.SimpleRegionStorageMixin"
