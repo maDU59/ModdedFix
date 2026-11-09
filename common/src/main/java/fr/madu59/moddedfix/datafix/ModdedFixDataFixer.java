@@ -97,6 +97,7 @@ public class ModdedFixDataFixer {
         Identifier id = Identifier.tryParse(name);
         if (id == null || BuiltInRegistries.BLOCK.containsKey(id)) return null;
         String newName = ModdedFixDataFixer.BLOCKS.get(name);
+        if(newName == null) return null;
         Identifier newId = Identifier.tryParse(newName);
         if(newId == null || !BuiltInRegistries.BLOCK.containsKey(newId)) return null;
         return newName;
@@ -118,6 +119,7 @@ public class ModdedFixDataFixer {
         Identifier id = Identifier.tryParse(name);
         if (id == null || BuiltInRegistries.BLOCK_ENTITY_TYPE.containsKey(id)) return null;
         String newName = ModdedFixDataFixer.BLOCK_ENTITIES.get(name);
+        if(newName == null) return null;
         Identifier newId = Identifier.tryParse(newName);
         if(newId == null || !BuiltInRegistries.BLOCK_ENTITY_TYPE.containsKey(newId)) return null;
         return newName;
@@ -139,6 +141,7 @@ public class ModdedFixDataFixer {
         Identifier id = Identifier.tryParse(name);
         if (id == null || BuiltInRegistries.ITEM.containsKey(id)) return null;
         String newName = ModdedFixDataFixer.ITEMS.get(name);
+        if(newName == null) return null;
         Identifier newId = Identifier.tryParse(newName);
         if(newId == null || !BuiltInRegistries.ITEM.containsKey(newId)) return null;
         return newName;
