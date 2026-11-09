@@ -3,6 +3,7 @@
   "minVersion": "0.8",
   "package": "fr.madu59.moddedfix.mixin",
   "compatibilityLevel": "JAVA_25",
+  "plugin": "fr.madu59.moddedfix.ModdedFixMixinPlugin",
   "mixins": [],
   "client": [
   ],
