@@ -9,6 +9,10 @@
     "datafix.SimpleRegionStorageMixin"
   ],
   "client": [
+    "datafix.compat.iris.at_midBlock_fix.IrisVertexFormatsMixin",
+    "datafix.compat.iris.mc_entity_fix.ShaderAttributeInputsMixin",
+    "datafix.compat.iris.mc_entity_fix.VanillaTransformerMixin",
+    "datafix.compat.iris.mc_entity_fix.VanillaCoreTransformerMixin"
   ],
   "server": [],
   "injectors": {

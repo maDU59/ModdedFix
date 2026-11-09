@@ -65,6 +65,8 @@ sourceSets.configureEach {
 }
 
 dependencies {
+    runtimeOnly 'org.anarres:jcpp:1.4.14'
+    implementation 'io.github.douira:glsl-transformer:3.0.0-pre3'
     implementation("maven.modrinth:sodium:mc1.21.11-0.8.14-neoforge")
     implementation("maven.modrinth:iris:1.10.8+1.21.11-neoforge")
 }
