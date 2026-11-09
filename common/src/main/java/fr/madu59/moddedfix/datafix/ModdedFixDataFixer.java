@@ -26,6 +26,7 @@ public class ModdedFixDataFixer {
             registerBlockEntityAndBlockConversion("lootr:lootr_trapped_chest", "minecraft:trapped_chest");
             registerBlockEntityAndBlockConversion("lootr:lootr_barrel", "minecraft:barrel");
             registerBlockEntityAndBlockConversion("lootr:lootr_shulker_box", "minecraft:shulker_box");
+            registerBlockEntityAndBlockConversion("lootr:lootr_shulker", "minecraft:shulker_box");
             registerBlockEntityAndBlockConversion("lootr:lootr_decorated_pot", "minecraft:lootr_decorated_pot");
             registerBlockEntityAndBlockConversion("lootr:lootr_suspicious_sand", "minecraft:lootr_suspicious_sand");
             registerBlockEntityAndBlockConversion("lootr:lootr_suspicious_gravel", "minecraft:lootr_suspicious_gravel");
@@ -38,6 +39,7 @@ public class ModdedFixDataFixer {
             registerBlockEntityAndBlockConversion("lootr:trapped_chest", "minecraft:trapped_chest");
             registerBlockEntityAndBlockConversion("lootr:barrel", "minecraft:barrel");
             registerBlockEntityAndBlockConversion("lootr:shulker_box", "minecraft:shulker_box");
+            registerBlockEntityAndBlockConversion("lootr:shulker", "minecraft:shulker_box");
             registerBlockEntityAndBlockConversion("lootr:decorated_pot", "minecraft:lootr_decorated_pot");
             registerBlockEntityAndBlockConversion("lootr:suspicious_sand", "minecraft:lootr_suspicious_sand");
             registerBlockEntityAndBlockConversion("lootr:suspicious_gravel", "minecraft:lootr_suspicious_gravel");
