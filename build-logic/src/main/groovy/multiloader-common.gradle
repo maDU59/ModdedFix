@@ -13,6 +13,10 @@ java {
     withJavadocJar()
 }
 
+repositories {
+    maven{url = "https://api.modrinth.com/maven"}
+}
+
 tasks.withType(Jar).configureEach {
     from(rootProject.file('LICENSE')) {
         rename { "${it}_${mod_name}" }
