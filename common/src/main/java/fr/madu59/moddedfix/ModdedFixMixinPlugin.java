@@ -16,7 +16,7 @@ public class ModdedFixMixinPlugin implements IMixinConfigPlugin {
             if(parts.size() != 2) {
                 return true;
             }
-            parts = List.of(mixinClassName.split("\\."));
+            parts = List.of(parts.getLast().split("\\."));
             String modId = parts.getFirst();
             return Services.PLATFORM.isModLoaded(modId);
         }
