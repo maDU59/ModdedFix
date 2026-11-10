@@ -1,4 +1,4 @@
-package fr.madu59.moddedfix.mixin.datafix.compat.iris.mc_entity_fix;
+package fr.madu59.moddedfix.mixin.compat.iris.mc_entity_fix;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import com.mojang.blaze3d.vertex.VertexFormat;

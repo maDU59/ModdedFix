@@ -1,4 +1,4 @@
-package fr.madu59.moddedfix.mixin.datafix.compat.iris.at_midBlock_fix;
+package fr.madu59.moddedfix.mixin.compat.iris.at_midBlock_fix;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;

@@ -19,6 +19,7 @@ dependencies {
     modImplementation("maven.modrinth:sodium:mc1.21.11-0.8.14-fabric")
     modImplementation("maven.modrinth:iris:1.10.8+1.21.11-fabric")
     modRuntimeOnly("maven.modrinth:fwa:7DjxuDWs")
+    modCompileOnly("maven.modrinth:enderscape:3cYKvu3m")
 }
 
 loom {
